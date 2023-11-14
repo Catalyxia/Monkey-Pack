@@ -4,6 +4,13 @@
   "item.monkeypack.iron_knife": "Iron knife",
   "item.monkeypack.gold_knife": "Gold knife",
   "item.monkeypack.diamond_knife": "Diamond knife",
-  "item.monkeypack.netherite_knife": "Netherite knife"
+  "item.monkeypack.netherite_knife": "Netherite knife",
+  "item.monkeypack.grass_fibre": "Grass fibre",
+  "item.monkeypack.grass_rope": "Grass rope",
+
+  "block.monkeypack.incomplete_ancient_debris": "Crude ancient debris",
+
+  "itemGroup.monkeypacktab": "Monkey Pack"
+
 
 }

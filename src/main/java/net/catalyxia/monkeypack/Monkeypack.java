@@ -1,6 +1,7 @@
 package net.catalyxia.monkeypack;
 
 import com.mojang.logging.LogUtils;
+import net.catalyxia.monkeypack.block.ModBlocks;
 import net.catalyxia.monkeypack.item.Moditems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,6 +24,7 @@ public class Monkeypack
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

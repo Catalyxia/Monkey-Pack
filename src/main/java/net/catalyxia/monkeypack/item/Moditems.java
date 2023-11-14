@@ -24,6 +24,10 @@ public class Moditems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
     public static final RegistryObject<Item> NETHERITE_KNIFE = ITEMS.register("netherite_knife",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
+    public static final RegistryObject<Item> GRASS_FIBRE = ITEMS.register("grass_fibre",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
+    public static final RegistryObject<Item> GRASS_ROPE = ITEMS.register("grass_rope",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
