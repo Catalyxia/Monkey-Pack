@@ -15,7 +15,7 @@ import org.slf4j.Logger;
 public class Monkeypack
 {
     public static final String MOD_ID = "monkeypack";
-    //very important comment
+    //very important comment next attempt
     private static final Logger LOGGER = LogUtils.getLogger();
     public Monkeypack() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
