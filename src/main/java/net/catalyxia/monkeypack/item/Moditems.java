@@ -3,6 +3,8 @@ package net.catalyxia.monkeypack.item;
 import net.catalyxia.monkeypack.Monkeypack;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tiers;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -13,17 +15,23 @@ public class Moditems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Monkeypack.MOD_ID);
 
     public static final RegistryObject<Item> WOOD_KNIFE = ITEMS.register("wood_knife",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
+            () -> new SwordItem(Tiers.WOOD,0, 0,
+                    new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
     public static final RegistryObject<Item> STONE_KNIFE = ITEMS.register("stone_knife",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
+            () -> new SwordItem(Tiers.STONE,0, 0,
+                    new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
     public static final RegistryObject<Item> IRON_KNIFE = ITEMS.register("iron_knife",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
+            () -> new SwordItem(Tiers.IRON,0, 0,
+                    new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
     public static final RegistryObject<Item> GOLD_KNIFE = ITEMS.register("gold_knife",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
+            () -> new SwordItem(Tiers.GOLD,0, 0,
+                    new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
     public static final RegistryObject<Item> DIAMOND_KNIFE = ITEMS.register("diamond_knife",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
+            () -> new SwordItem(Tiers.DIAMOND,0, 0,
+                    new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
     public static final RegistryObject<Item> NETHERITE_KNIFE = ITEMS.register("netherite_knife",
-            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
+            () -> new SwordItem(Tiers.NETHERITE,0, 0,
+                    new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
     public static final RegistryObject<Item> GRASS_FIBRE = ITEMS.register("grass_fibre",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB)));
     public static final RegistryObject<Item> GRASS_ROPE = ITEMS.register("grass_rope",

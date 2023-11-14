@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "monkeypack:grass_fibre"
+    },
+    {
+      "item": "monkeypack:grass_fibre"
+    },
+    {
+      "item": "monkeypack:grass_fibre"
+    }
+  ],
+  "result": {
+    "item": "monkeypack:grass_rope"
+  }
+}

@@ -23,7 +23,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> INCOMPLETE_ANCIENT_DEBRIS = registerblock("incomplete_ancient_debris",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
-                    .requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS)), ModCreativeModeTab.MONKEYPACK_TAB);
+                    .strength(30f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS).explosionResistance(90f)), ModCreativeModeTab.MONKEYPACK_TAB);
 
 
 
