@@ -1,6 +1,7 @@
 package net.catalyxia.monkeypack;
 
 import com.mojang.logging.LogUtils;
+import net.catalyxia.monkeypack.item.Moditems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -16,10 +17,12 @@ public class Monkeypack
 {
     public static final String MOD_ID = "monkeypack";
     //very important comment next attempt
-    // is now on github
+    //is now on github
     private static final Logger LOGGER = LogUtils.getLogger();
     public Monkeypack() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        Moditems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
