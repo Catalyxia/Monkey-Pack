@@ -1,10 +1,7 @@
 package net.catalyxia.monkeypack.item;
 
 import net.catalyxia.monkeypack.Monkeypack;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SwordItem;
-import net.minecraft.world.item.Tiers;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,8 +12,9 @@ public class Moditems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Monkeypack.MOD_ID);
 
     public static final RegistryObject<Item> WOOD_KNIFE = ITEMS.register("wood_knife",
-            () -> new SwordItem(Tiers.WOOD,0, 0,
-                    new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
+            () -> new PickaxeItem(Tiers.WOOD,
+                    new Item.Properties(.)
+                            .tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)).);
     public static final RegistryObject<Item> STONE_KNIFE = ITEMS.register("stone_knife",
             () -> new SwordItem(Tiers.STONE,0, 0,
                     new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
