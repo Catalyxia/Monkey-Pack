@@ -3,11 +3,12 @@ package net.catalyxia.monkeypack.block;
 import net.catalyxia.monkeypack.Monkeypack;
 import net.catalyxia.monkeypack.item.ModCreativeModeTab;
 import net.catalyxia.monkeypack.item.Moditems;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -24,8 +25,6 @@ public class ModBlocks {
     public static final RegistryObject<Block> INCOMPLETE_ANCIENT_DEBRIS = registerblock("incomplete_ancient_debris",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE)
                     .strength(30f).requiresCorrectToolForDrops().sound(SoundType.ANCIENT_DEBRIS).explosionResistance(90f)), ModCreativeModeTab.MONKEYPACK_TAB);
-
-
 
     private static <T extends Block>RegistryObject<T> registerblock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
