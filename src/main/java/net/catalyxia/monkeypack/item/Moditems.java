@@ -12,9 +12,8 @@ public class Moditems {
             DeferredRegister.create(ForgeRegistries.ITEMS, Monkeypack.MOD_ID);
 
     public static final RegistryObject<Item> WOOD_KNIFE = ITEMS.register("wood_knife",
-            () -> new PickaxeItem(Tiers.WOOD,
-                    new Item.Properties(.)
-                            .tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)).);
+            () -> new PickaxeItem(Tiers.WOOD,0,0,
+                    new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
     public static final RegistryObject<Item> STONE_KNIFE = ITEMS.register("stone_knife",
             () -> new SwordItem(Tiers.STONE,0, 0,
                     new Item.Properties().tab(ModCreativeModeTab.MONKEYPACK_TAB).stacksTo(1)));
